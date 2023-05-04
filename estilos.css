@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Maven+Pro:wght@600&family=Pacifico&family=Tillana:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: orange;
+    height: 80px;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    font-size: px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #333;
+
+}
+
+.barra {
+    float: right;
+}
+
+.barra li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.barra a {
+    color: white;
+    text-decoration: none;
+}
+
+.barra a:hover {
+    color: rgb(97, 71, 23)
+}
+
+.primero {
+    width: 100%;
+    height: 20%;
+    border: #000;
+}
+
+.primero img {
+    width: 100%;
+    height: 300px;
+border: 5px solid #000;
+}
+
+.primero p {
+    font-size: 3rem;
+    color: orange;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: orange;
+}
+
+.galeria {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+.item {
+    border: 3px solid #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 {
+    background-image: url(imagen/remeraamarilla.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item2 {
+    background-image: url(imagen/remerasgris.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.galeria2 {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+.item3 {
+    background-image: url(imagen/remerarosa.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(/pantalon/pantalonjean.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.letrauno {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    position: relative;
+}
+.suscribite{
+    height: 200px;
+    background-color: orange;
+}
+
+.formulario {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orange;
+    border: solid #000;
+    padding: 20px;
+
+}
+
+.categorias {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.categorias li {
+    text-align: center;
+    background-color: orange;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: rgb(24, 21, 21);
+}
+
+.categorias a:hover {
+    color: rgb(97, 71, 23);
+    box-shadow: 0 1 2px #977123;
+}
+
+.contacto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background-color: orange;
+    text-align: center;
+}
+
+.contacto li {
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.redes {
+    letter-spacing: 20px;
+    font-size: 50px;
+}
+
+.redes a {
+    color: #fff;
+}
+
+.redes a:hover {
+    color: hsl(39, 100%, 50%);
+
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-family: 20px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: 3px solid #fff;
+}
+.subir:hover{
+    box-shadow: 0 0 5px #fff;
+}
