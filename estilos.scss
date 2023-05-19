@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Maven+Pro:wght@600&family=Pacifico&family=Tillana:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Maven+Pro:wght@600&family=Pacifico&family=Tillana:wght@600&display=swap');
+
+$font1: 'Pacifico', cursive;
+
+$color1: orange;
 
 * {
     margin: 0;
@@ -10,7 +14,7 @@ header {
     background-color: orange;
     height: 80px;
     width: 100%;
-    font-family: "Pacifico", cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 22px;
     padding: 20px;
 }
@@ -20,6 +24,7 @@ header {
     font-size: px;
     font-weight: bold;
     text-shadow: 0 0 5px #333;
+
 }
 
 .barra {
@@ -29,6 +34,7 @@ header {
 .barra li {
     list-style: none;
     display: inline-block;
+
 }
 
 .barra a {
@@ -37,7 +43,7 @@ header {
 }
 
 .barra a:hover {
-    color: rgb(97, 71, 23);
+    color: rgb(97, 71, 23)
 }
 
 .primero {
@@ -50,7 +56,7 @@ header {
 .primero img {
     width: 100%;
     height: 300px;
-    border: 5px solid #000;
+border: 5px solid #000;
 }
 
 .primero p {
@@ -59,6 +65,7 @@ header {
     position: absolute;
     top: 30%;
     left: 40%;
+
 }
 
 h2 {
@@ -119,12 +126,11 @@ h2 {
 }
 
 .letrauno {
-    font-family: "Pacifico", cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 3rem;
     position: relative;
 }
-
-.suscribite {
+.suscribite{
     height: 200px;
     background-color: orange;
 }
@@ -132,14 +138,15 @@ h2 {
 .formulario {
     text-align: center;
     font-size: 30px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: orange;
     border: solid #000;
     padding: 20px;
+
 }
 
 .categorias {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     list-style: none;
     text-decoration: none;
@@ -161,7 +168,7 @@ h2 {
 }
 
 .contacto {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     background-color: orange;
     text-align: center;
@@ -190,9 +197,10 @@ footer {
 
 .redes a:hover {
     color: hsl(39, 100%, 50%);
+
 }
 
-.subir {
+.subir{
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -205,16 +213,13 @@ footer {
     right: 40px;
     border: 3px solid #fff;
 }
-
-.subir:hover {
+.subir:hover{
     box-shadow: 0 0 5px #fff;
 }
 
-@media only screen and (min-width: 488) {
-    .galeria {
+@media only screen and (min-width:488) {
+    .galeria{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4);
+        grid-template-rows: repeat(4,);
     }
 }
-
-/*# sourceMappingURL=estilos.css.map */
