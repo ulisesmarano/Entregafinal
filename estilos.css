@@ -46,6 +46,7 @@ header {
     width: 100%;
     height: 20%;
     border: #000;
+    margin-bottom: 0;
 }
 
 .primero img {
@@ -84,14 +85,14 @@ h2 {
 }
 
 .item1 {
-    background-image: url(imagen/remeraamarilla.png);
+    background-image: url(/remeranegra.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .item2 {
-    background-image: url(imagen/remerasgris.jpg);
+    background-image: url(/gorras/gorranaranja.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -107,7 +108,7 @@ h2 {
 }
 
 .item3 {
-    background-image: url(imagen/remerarosa.png);
+    background-image: url(/remeraamarilla.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,4 +211,11 @@ footer {
 }
 .subir:hover{
     box-shadow: 0 0 5px #fff;
+}
+
+@media only screen and (min-width:488) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,);
+    }
 }
