@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Maven+Pro:wght@600&family=Pacifico&family=Tillana:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Kanit:ital,wght@1,200&family=Maven+Pro:wght@600&family=Pacifico&family=Tillana:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -17,9 +18,9 @@ header {
 
 .logo {
     float: left;
-    font-size: px;
+    font-size: 30px;
     font-weight: bold;
-    text-shadow: 0 0 5px #333;
+    text-shadow: 5px 5px 5px #333;
 }
 
 .barra {
@@ -59,6 +60,8 @@ header {
     position: absolute;
     top: 30%;
     left: 40%;
+    font-family: "Pacifico", cursive;
+    text-shadow: 5px 5px 5px #0c0404;
 }
 
 h2 {
@@ -69,10 +72,16 @@ h2 {
 .galeria {
     width: 100%;
     min-height: 400px;
-    background-color: white;
+    background-color: rgb(226, 197, 197);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
+    transition: all 0.9;
+}
+
+.galeria:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 5px #000;
 }
 
 .item {
@@ -82,14 +91,14 @@ h2 {
 }
 
 .item1 {
-    background-image: url(/remeranegra.png);
+    background-image: url(./imagenes/remeranegra.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .item2 {
-    background-image: url(/gorras/gorranaranja.png);
+    background-image: url(./imagenes/gorranaranja.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,21 +107,28 @@ h2 {
 .galeria2 {
     width: 100%;
     min-height: 400px;
-    background-color: white;
+    background-color: rgb(226, 202, 202);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
+    transition: all 0.9;
+}
+
+.galeria2:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 5px #000;
+
 }
 
 .item3 {
-    background-image: url(/remeraamarilla.png);
+    background-image: url(./imagenes/remeraamarilla.png  );
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .item4 {
-    background-image: url(/pantalon/pantalonjean.png);
+    background-image: url(./imagenes/pantalonjean.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -139,7 +155,7 @@ h2 {
 }
 
 .categorias {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 50px;
     list-style: none;
     text-decoration: none;
@@ -171,6 +187,10 @@ h2 {
     text-align: center;
     background-color: orange;
     padding: 10px;
+}
+
+.borde {
+    border: 3px solid #140d0d;
 }
 
 footer {
@@ -210,11 +230,341 @@ footer {
     box-shadow: 0 0 5px #fff;
 }
 
-@media only screen and (min-width: 488) {
+
+.galeprendas {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(228, 207, 207);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    transition: all 0.9;
+}
+
+.item5 {
+    background-image: url(./imagenes/remeraamarilla.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item5:hover {
+    transform: scale(1.2);
+}
+
+.item6 {
+    background-image: url(./imagenes/remeranegra.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item6:hover {
+    transform: scale(1.2);
+}
+
+.item7 {
+    background-image: url(./imagenes/remeranaranja.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item7:hover {
+    transform: scale(1.2);
+}
+
+.item8 {
+    background-image: url(./imagenes/remeraazul.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item8:hover {
+    transform: scale(1.2);
+}
+
+.item9 {
+    background-image: url(./imagenes/remeraroja.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item9:hover {
+    transform: scale(1.2);
+}
+
+.item10 {
+    background-image: url(./imagenes/remerarosa.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item10:hover {
+    transform: scale(1.2);
+}
+
+.galebuzos {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(226, 207, 207);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.item11 {
+    background-image: url(./imagenes/buzoblanco.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item11:hover {
+    transform: scale(1.2);
+}
+
+.item12 {
+    background-image: url(./imagenes/buzoceleste.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item12:hover {
+    transform: scale(1.2);
+}
+
+.item13 {
+    background-image: url(./imagenes/buzogris.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item13:hover {
+    transform: scale(1.2);
+}
+
+.item14 {
+    background-image: url(./imagenes/buzonegro.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item14:hover {
+    transform: scale(1.2);
+}
+
+.galepantalon {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(228, 207, 207);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.item15 {
+    background-image: url(./imagenes/pantalonrojo.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item15:hover {
+    transform: scale(1.2);
+}
+
+.item16 {
+    background-image: url(./imagenes/pantalonjean.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item16:hover {
+    transform: scale(1.2);
+}
+
+.item17 {
+    background-image: url(./imagenes/pantalonazul.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item17:hover {
+    transform: scale(1.2);
+}
+
+.item18 {
+    background-image: url(./imagenes/pantalonvioleta.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item18:hover {
+    transform: scale(1.2);
+}
+
+.galegorras {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(226, 194, 194);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.item19 {
+    background-image: url(./imagenes/gorramarron.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item19:hover {
+    transform: scale(1.2);
+}
+
+.item20 {
+    background-image: url(./imagenes/sombreromarron.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item20:hover {
+    transform: scale(1.2);
+}
+
+.item21 {
+    background-image: url(./imagenes/gorranaranja.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item21:hover {
+    transform: scale(1.2);
+}
+
+.item22 {
+    background-image: url(./imagenes/gorranegra.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item22:hover {
+    transform: scale(1.2);
+}
+
+.item23 {
+    background-image: url(./imagenes/sombrerorojo.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item23:hover {
+    transform: scale(1.2);
+}
+
+.item24 {
+    background-image: url(./imagenes/gorraverde.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item24:hover {
+    transform: scale(1.2);
+}
+
+.tabla {
+    background-color: orange;
+    background-color: orange;
+    position: left;
+    left: 50px;
+    background-color: orange;
+}
+
+.tabla table {
+    position: 200px;
+    background-color: red;
+    height: 100px;
+    text-align: center;
+    border: 3px solid #291a1a;
+}
+
+.galeoferta {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(228, 208, 208);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1; 400px);
+
+}
+
+.galebuzosofer {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(228, 212, 212);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1; 400px);
+}
+
+.galepantalonofer {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(228, 204, 204);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1; 400px);
+}
+
+.galegorrasofer {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(226, 208, 208);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 400px);
+}
+
+h4 {
+    text-align: center;
+    background-color: orange;
+}
+
+.pe {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(228, 160, 35);
+}
+
+.sucursales {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(228, 160, 35);
+}
+
+@media only screen and (min-width: 480px){
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4);
     }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+    /*# sourceMappingURL=estilos.css.map */

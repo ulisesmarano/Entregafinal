@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/imagen/log0.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="log0.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,23 +33,22 @@
             interes</mark></marquee>
 
     <section class="primero">
-        <img src="./remeras.png" alt="muchasremeras">
+        <img src="muchasremeras.png" alt="muchasremeras">
         <p class="primero">PepitoClothes</p>
     </section>
     <section>
         <div>
             <h2 class="letrauno">¡Nuevo!</h2>
         </div>
-        <div class="galeria">
+        <div data-aos="flip-up" class="galeria">
             <div class="item1 item"></div>
             <div class="item2 item"></div>
         </div>
     </section>
-
     <section>
         <div>
             <h2 class="letrauno">¡Ofertas!</h2>
-            <div class="galeria2">
+            <div data-aos="flip-up" class="galeria2">
                 <div class="item3 item"></div>
                 <div class="item4 item"></div>
             </div>
@@ -61,7 +61,7 @@
                 placeholder="Apellido">
         </form>
     </div>
-    <div class="caca">
+    <div>
         <h2 class="letrauno">Dejanos un comentario!</h2>
         <form class="formulario" action="formulario.php" method="post" enctype="text/plain">
             Ingresa tu email<input type="email" required placeholder="email"><br>
@@ -70,31 +70,35 @@
             <input type="reset" value="eliminar">
         </form>
     </div>
-    <div>
-        <h2 class="letrauno">Categorias</h2>
-        <ul class="categorias" type="disc">
-            <li><a href="prendas.html"> Remeras</a></li>
-            <li><a href="prendas.html">Buzos</a></li>
-            <li><a href="prendas.html">Gorras</a></li>
-            <li><a href="prendas.html">Pantalones</a></li>
-    </div>
-    <div>
-        <h2 class="letrauno">Contactanos</h2>
-        <ul class="contacto" type="disc">
-            <li><i class="fa-solid fa-envelope"></i>PepitoClothes@gmail.com</li>
-            <li><i class="fa-brands fa-whatsapp"></i>(+54)11 2332 4554</li>
-        </ul>
-    </div>
-
-    <footer>
-        <div class="redes">
-            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+    <section class="borde">
+        <div>
+            <h2 class="letrauno">Categorias</h2>
+            <ul class="categorias" type="disc">
+                <li><a href="prendas.html"> Remeras</a></li>
+                <li><a href="prendas.html">Buzos</a></li>
+                <li><a href="prendas.html">Gorras</a></li>
+                <li><a href="prendas.html">Pantalones</a></li>
         </div>
-    </footer>
-    <a href="#" class="subir"><i class="fa-solid fa-arrow-up"></i></a>
-
+        <div>
+            <h2 class="letrauno">Contactanos</h2>
+            <ul class="contacto" type="disc">
+                <li><i class="fa-solid fa-envelope"></i>PepitoClothes@gmail.com</li>
+                <li><i class="fa-brands fa-whatsapp"></i>(+54)11 2332 4554</li>
+            </ul>
+        </div>
+        <footer>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+        <a href="#" class="subir"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
